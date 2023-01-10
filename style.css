@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  background: #535971;
+
+  width: 100%;
+  height: 436px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+  background: #E5E5E5;
+}
+
+h1, h2, legend, .button {
+  font-family: 'Staatliches', sans-serif;
+}
+
+.page {
+  margin: auto;
+  width: 750px;
+}
+
+header {
+  margin: 140px 0 58px 0;
+}
+
+header h1 {
+  font-size: 48px;
+  line-height: 60px;
+
+  color: #FFFFFF;
+}
+header p {
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+
+  margin-top: 18px;
+}
+
+form {
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+.first-legend {
+  padding-bottom: 16px;
+}
+
+legend {
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #535971;
+  
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E6E6F0;
+
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.input-wrapper, .label-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+input {
+  height: 56px;
+  
+  background: #FAFAFC;
+  color: #4E4958;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  margin-top: 8px;
+  padding: 0 24px;
+}
+
+span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #C1BCCC;
+}
+
+span:hover {
+  color: #8c8796;
+
+  transition: color .2s;
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 10px;
+}
+
+.col-3 :nth-child(1) {
+  margin-right: 22px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 34px;
+
+  color: #535971;
+
+  padding: 16px 0 8px 0;
+}
+
+footer {
+  background: #535971;
+
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 51px 71px;
+
+  margin-bottom: 100px;
+  
+  border-radius: 0px 0px 20px 20px;
+}
+
+footer .button {
+  height: 56px;
+  
+  background: #FF5374;
+  color: #FFFFFF;
+
+  border: 0;
+  border-radius: 20px;
+}
+
+footer .button:hover {
+  cursor: pointer;
+  background: #ff1b48;
+  transition: background 0.3s;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
